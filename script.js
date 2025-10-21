@@ -1,4 +1,3 @@
-//your JS code here. If required.
 const bands = [
   'The Plot in You',
   'The Devil Wears Prada',
@@ -15,14 +14,14 @@ const bands = [
   'An Old Dog'
 ];
 
-// Function to remove 'a', 'an', and 'the' for sorting
+// Function to remove 'a', 'an', and 'the' from start
 function strip(bandName) {
   return bandName.replace(/^(a |an |the )/i, '').trim();
 }
 
-// Sort the array ignoring 'a', 'an', 'the'
+// Sort alphabetically ignoring the above words
 const sortedBands = bands.sort((a, b) => strip(a).localeCompare(strip(b)));
 
-// Add sorted bands to the DOM
+// Add sorted bands to the list
 const bandList = document.getElementById('band');
 bandList.innerHTML = sortedBands.map(band => `<li>${band}</li>`).join('');
