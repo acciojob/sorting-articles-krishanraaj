@@ -14,12 +14,12 @@ const bands = [
   'An Old Dog'
 ];
 
-// Remove 'a', 'an', 'the' from sorting
 function strip(bandName) {
   return bandName.replace(/^(a |an |the )/i, '').trim();
 }
 
 const sortedBands = bands.sort((a, b) => strip(a).localeCompare(strip(b)));
 
-const bandList = document.getElementById('band');
+// ✅ Get by id "bands" instead of "band"
+const bandList = document.getElementById('bands');
 bandList.innerHTML = sortedBands.map(band => `<li>${band}</li>`).join('');

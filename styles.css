@@ -4,28 +4,24 @@
   box-sizing: border-box;
 }
 
-/* ✅ Background PNG image */
 body {
-  background-image: url('background.png'); /* replace with your own image path */
+  background-image: url('background.png'); /* PNG background */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-/* White content box */
 .container {
-  background: rgba(255, 255, 255, 0.9); /* slightly transparent white */
-  padding: 30px 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px 50px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   text-align: center;
-  width: 350px;
 }
 
 h1 {
@@ -34,7 +30,6 @@ h1 {
   font-size: 1.6rem;
 }
 
-/* ✅ Bullet points visible */
 ul {
   list-style-type: disc;
   text-align: left;
@@ -42,7 +37,7 @@ ul {
 }
 
 li {
-  padding: 8px 0;
+  margin: 8px 0;
   font-size: 1rem;
   color: #333;
 }
